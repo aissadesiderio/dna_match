@@ -6,3 +6,6 @@ Jogador: 180
 Jogador: 180
 Jogador: 180
 Jogador: 435
+Jogador: 180
+Jogador: 180
+Jogador: 135

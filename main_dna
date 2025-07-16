@@ -560,8 +560,8 @@ class Game:
             codons_str = " | ".join([f"{c[1]} ({c[2]})" for c in self.codons_bkp])
             self.janela.draw_text(f"Códons Bônus: {codons_str}", WIDTH / 2 - 250, 290, size=28, color=(255, 255, 120))
 
-        self.janela.draw_text("Pressione ENTER para voltar ao menu", WIDTH / 2 - 220, 360, size=28, color=(180, 255, 255))
-        self.janela.draw_text("Ou ESC para sair do jogo", WIDTH / 2 - 220, 410, size=28, color=(255, 128, 128))
+        self.janela.draw_text("     Pressione ENTER para voltar ao menu", WIDTH / 2 - 220, 360, size=28, color=(180, 255, 255))
+
         
         self.janela.draw_text(f"Dica: {self.curiosidade_atual}", 80, HEIGHT - 40, size=22, color=(180, 180, 255))
 
