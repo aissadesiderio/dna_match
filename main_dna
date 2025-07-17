@@ -6,6 +6,8 @@ from PPlay.window import *
 from PPlay.sprite import *
 from PPlay.gameimage import *
 from PPlay.mouse import *
+from PPlay.sound import *
+
 
 #Configurações Iniciais
 WIDTH, HEIGHT = 1280, 720
@@ -49,6 +51,23 @@ class Game:
         self.tela_atual = "menu"  #Controla qual tela está ativa
         self.rodando = True
         self.clicou_botao = False #Trava para evitar cliques duplos em botões
+
+
+        #Audio
+        try:
+            caminho_musica = "assets/trilha_sonora.mp3" 
+
+            verifica_arquivo(caminho_musica)
+            self.musica_fundo = Sound(caminho_musica)
+
+            #Ajustar o volume (de 0 a 100)
+            self.musica_fundo.set_volume(50) 
+
+            self.musica_fundo.set_repeat(True) #Para a música tocar em loop
+            self.musica_fundo.play()
+        except Exception as e:
+            print(f"AVISO: Não foi possível carregar a música de fundo: {e}")
+
 
         #Assets do Jogo
         self.assets = self.carregar_assets()
@@ -552,7 +571,7 @@ class Game:
                 self.rodando = False
 
     def draw_fim(self):
-        self.janela.draw_text("FIM DE JOGO", WIDTH / 2 - 150, 150, size=42, color=(0, 255, 255), bold=True)
+        self.janela.draw_text(" FIM DE JOGO", WIDTH / 2 - 150, 150, size=42, color=(0, 255, 255), bold=True)
         texto_pontuacao = f"Sua Pontuação Final: {self.pontuacao}"
         self.janela.draw_text(texto_pontuacao, WIDTH / 2 - 220, 230, size=38, color=(0, 255, 255), bold=True)
         
