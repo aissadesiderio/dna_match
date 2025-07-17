@@ -95,6 +95,7 @@ class Game:
             "As bases são complementares: A pareia com T (ou U no RNA) e C pareia com G.",
             "Cada fita de DNA é uma sequência de unidades chamadas nucleotídeos.",
             "Uma mutação é qualquer alteração na sequência de DNA.",
+            "O genoma humano foi sequenciado por completo em 2003",
         ]
         self.curiosidade_atual = random.choice(self.curiosidades)
         self.curiosidade_timer = 0
