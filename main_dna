@@ -323,7 +323,7 @@ class Game:
             self.janela.draw_text(f"{i + 1}. {nome} - {score}", 60, 535 + i * 28, size=22, color=(200, 200, 200))
 
         #Curiosidade
-        self.janela.draw_text(f"Dica: {self.curiosidade_atual}", 80, HEIGHT - 40, size=22, color=(180, 180, 255))
+        self.janela.draw_text(f"Curiosidade: {self.curiosidade_atual}", 80, HEIGHT - 40, size=22, color=(180, 180, 255))
 
     #Tela de Nível
     def update_nivel(self):
@@ -499,7 +499,7 @@ class Game:
         #HUD (Pontuação e FPS)
         self.janela.draw_text(f"Pontos: {self.pontuacao}", self.janela.width - 200, 20, size=25, color=(0, 255, 255), bold=True)
         self.janela.draw_text(f"FPS: {self.fps}", 20, 20, size=1, color=(120, 255, 120))
-        self.janela.draw_text(f"Dica: {self.curiosidade_atual}", 80, HEIGHT - 40, size=22, color=(180, 180, 255))
+        self.janela.draw_text(f"Curiosidade: {self.curiosidade_atual}", 80, HEIGHT - 40, size=22, color=(180, 180, 255))
     
     def calcular_pontuacao_final(self):
         """Calcula a pontuação com base nas combinações de bases e códons."""
