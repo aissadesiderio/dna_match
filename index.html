@@ -8,28 +8,77 @@
       font-family: Arial, sans-serif;
       background-color: #002235;
       color: white;
-      text-align: center;
-      padding: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      line-height: 1.6;
     }
-    a.download {
-      background: #00ffff;
-      padding: 12px 24px;
-      color: black;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
+    a {
+      color: #00ffff;
+    }
+    pre {
+      background-color: #001622;
+      padding: 10px;
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
+  
   <h1>🧬 DNA MATCH</h1>
-  <p>Projeto da disciplina de Laboratório de Jogos (UFF)</p>
-  <p>Jogo educacional com trilha sonora e desafios genéticos!</p>
-  <a class="download" href="https://github.com/aissadesiderio/dna_match/archive/refs/heads/main.zip">
-    ⬇ Baixar o jogo
-  </a>
-  <p style="margin-top: 50px;">Desenvolvido por <strong>Aíssa Desiderio</strong></p>
+
+  <h2>🎮 Descrição do Jogo</h2>
+  <p><strong>DNA Match</strong> é um jogo puzzle educativo que combina agilidade e raciocínio lógico com conhecimentos de biologia molecular. O jogador deve alinhar corretamente as bases nitrogenadas de fitas de DNA e RNA, respeitando as regras de pareamento. De forma visual, divertida e interativa, o jogo introduz conceitos fundamentais como códons de início/parada e estrutura de nucleotídeos.</p>
+  <p>Seu diferencial está em unir jogabilidade com conteúdo escolar de forma acessível e estética futurista, inspirada no universo sci-fi.</p>
+
+  <h2>🧠 Dinâmica e Objetivos</h2>
+  <p>O objetivo principal é completar corretamente as fitas genéticas que se movem pela tela, escolhendo as bases complementares ideais:</p>
+  <ul>
+    <li><strong>DNA:</strong> A ↔ T, C ↔ G</li>
+    <li><strong>RNA:</strong> A ↔ U, C ↔ G</li>
+  </ul>
+
+  <h3>🎯 Pontuação:</h3>
+  <ul>
+    <li>✅ Base correta: +10 pontos</li>
+    <li>✅ Combo (3 acertos seguidos): +30 pontos</li>
+    <li>✅ Códons (início ou parada) corretos: +50 pontos</li>
+    <li>❌ Base incorreta ou códon errado: -5 pontos</li>
+  </ul>
+
+  <h3>🧩 Modos de Jogo:</h3>
+  <ul>
+    <li><strong>Fácil:</strong> 2 fitas de DNA (18 pares)</li>
+    <li><strong>Difícil:</strong> 2 fitas de DNA + 1 fita de RNA (36 pares)</li>
+  </ul>
+
+  <h2>💻 Instruções de Instalação</h2>
+  <ol>
+    <li>Faça o download do jogo:
+      <br><a href="https://aissadesiderio.itch.io/dna-match" target="_blank">https://aissadesiderio.itch.io/dna-match</a></li>
+    <li>Extraia o conteúdo <code>.zip</code></li>
+    <li>Instale o Python (versão 3.8 ou superior) e o PPlay:
+      <pre><code>pip install pplay</code></pre></li>
+    <li>Execute o jogo com:
+      <pre><code>python main_dna.py</code></pre></li>
+  </ol>
+
+  <h2>🎨 Arte e Estética</h2>
+  <p>Inspirado visualmente no filme <em>Tron: O Legado</em>, o jogo utiliza uma paleta neon sobre fundo escuro, oferecendo um visual limpo, sci-fi e educativo. As bases nitrogenadas são representadas por blocos coloridos vibrantes.</p>
+
+  <h2>🔊 Trilha Sonora</h2>
+  <ul>
+    <li><strong>Tela inicial:</strong> Lo-fi futurista relaxante</li>
+    <li><strong>Durante o jogo:</strong> Ritmo levemente acelerado para manter a tensão e o foco</li>
+  </ul>
+
+  <h2>👩‍💻 Créditos e Autoria</h2>
+  <ul>
+    <li><strong>Desenvolvedora:</strong> Aíssa Desiderio</li>
+    <li><strong>Curso:</strong> Ciência da Computação – UFF</li>
+    <li><strong>Disciplina:</strong> Laboratório de Jogos</li>
+    <li><strong>Componentes:</strong> Código, arte e som desenvolvidos ou adaptados exclusivamente para fins educacionais</li>
+  </ul>
+
 </body>
 </html>
